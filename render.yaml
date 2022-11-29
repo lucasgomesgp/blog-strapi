@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: blog-strapi
+    name: blog
     env: node
     plan: free
     buildCommand: yarn install && yarn build
@@ -9,7 +9,7 @@ services:
     autoDeploy: false
     envVars:
       - key: NODE_VERSION
-        value: ~16.13.0
+        value: ~18.12.1
       - key: NODE_ENV
         value: production
       - key: CLOUDINARY_NAME
